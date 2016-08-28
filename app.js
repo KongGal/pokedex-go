@@ -19,12 +19,12 @@ app.use(express.static('public'));
 
 // base route
 app.get('/', (req, res) => {
-	res.status(200).send('1941450414');
+	res.status(200).send('TestBot');
 });
 
 app.get('/webhook', (req, res) => {
 	if (req.query['hub.mode'] === 'subscribe' &&
--			req.query['hub.verify_token'] === VALIDATION_TOKEN) {
+-			req.query['hub.verify_token'] === 'VALIDATION_TOKEN') {
 		console.log('validating webhook');
 		res.status(200).send(req.query['hub.challenge']);
 	} else {
