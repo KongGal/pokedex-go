@@ -26,7 +26,8 @@ This Bot will:
 
 not collect any data
 not share informations with third parties
-have a completely transparent code base which can be found here');
+have a completely transparent code base which can be found here
+https://github.com/KongGal/pokedex-go');
 });
 
 app.get('/webhook', (req, res) => {
