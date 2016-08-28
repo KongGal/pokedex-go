@@ -29,7 +29,7 @@ app.get('/webhook', (req, res) => {
 		res.status(200).send(req.query['hub.challenge']);
 	} else {
 		console.log('failed validation.');
-		res.sendStatus(403);
+		res.sendStatus(403).send('Piss off');
 	}
 });
 
