@@ -19,7 +19,14 @@ app.use(express.static('public'));
 
 // base route
 app.get('/', (req, res) => {
-	res.status(200).send('TestBot');
+	res.status(200).send('Privacy Policy
+Last updated: 28-07-2016
+
+This Bot will:
+
+not collect any data
+not share informations with third parties
+have a completely transparent code base which can be found here');
 });
 
 app.get('/webhook', (req, res) => {
