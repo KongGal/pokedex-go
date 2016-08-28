@@ -24,7 +24,8 @@ app.get('/', (req, res) => {
 
 app.get('/webhook', (req, res) => {
 	if (req.query['hub.mode'] === 'subscribe' &&
-			req.query['hub.verify_token'] === VALIDATION_TOKEN) {
+			req.query['hub.verify_token'] === EAAXMIlWWoekBAI8aghImUvmyxWLpbooIsf318ZBHPHXVTeNFllDacIjyyYEmf1bTAma6TNp1WIqrT6M5UweXGZCmYdrPWevH9p3VNV05QwEXR6fZCYT9NmgG6sU0p0qcZBe9pRfz1txOvbaw8iBaNyfhUZCX8MZAIZBrqShrsLD7wZDZD
+) {
 		console.log('validating webhook');
 		res.status(200).send(req.query['hub.challenge']);
 	} else {
