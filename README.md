@@ -30,7 +30,7 @@ Ideas and Pull Requests welcome!
 
 # Privacy Policy
 
-This Bot will:
+This Page / Bot will:
 
 - not collect any data
 - not share informations with third parties
